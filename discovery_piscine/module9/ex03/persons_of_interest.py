@@ -2,8 +2,8 @@
 
 def famous_births(persons):
     sort_d = dict(sorted(persons.items(), key = lambda item: int(item[1]['date_of_birth'])))
-    for key in sort_d:
-        print(f"{persons[key]['name']}  is a great scientist born in {persons[key]['date_of_birth']}.")
+    for key in sort_d.keys():
+        print(f"{sort_d[key]['name']}  is a great scientist born in {sort_d[key]['date_of_birth']}.")
 
 women_scientists = {
 "ada": { "name": "Ada Lovelace", "date_of_birth": "1815" },
